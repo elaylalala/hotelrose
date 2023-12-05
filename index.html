@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL ROSE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>LAILA</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>TEMPAT TINGGAL YANG BAGUS DAN MYAMAN</h2>
+                <p>ialah hotel rose yang sangat nyaman dan sangat direkomedasikan di bangkalan</p>
+                <button type = "button" class = "head-btn">MEMULAI</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Makanan</h2>
+                        <p>Disini kami meneyediakan berbagai makanan,serta dessert yang enak,makanan kami dijamin enak dan berkualitas!</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Minuman</h2>
+                        <p>Disni kami menyediakan minuman seperti jus,smoothies,minuman alkoholpun ada dan juga kami jamin semua minuman dijamin enak serta memakai buah-buahan yang berkualitas!</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Disini kami menjamin kebersihan,yaitu dengan menata dan merapikan kamar agar terlihat indah,serta menjaga dekorasi kamar</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Keamanan</h2>
+                        <p>Disini kami menjamin menjaga dan mengatur keamanan hotel serta melakukan pengamanan seluruh area hotel</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "dewasa">Dewasa: </label>
+                    <input type = "number" min = "1" value = "1" id = "dewasa">
+                </div>
+                <div class = "form-item">
+                    <label for = "anak-anak">anak-anak: </label>
+                    <input type = "number" min = "1" value = "1" id = "anak-anak">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Deluxe Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                harganya paling ekonomi.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                fasilitas standar
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Nyaman
+                            </li>
+                        </ul>
+                        <p>Deluxe room adalah jenis kamar hotel diatas tipe standar dengan ukuran kamar yang lebih luas dan besar. deluxe room memiliki ukuran dan fasilitas lebih baik daripada superior room. Superior room sendiri menawarkan ukuran ruangan yang lebih luas dan fasilitas yang hampir mirip dengan standard room.</p>
+                        <p class = "rate">
+                            <span>150.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Superior Room</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                harganya lebih mahal .
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                fasilitas yang diberikan tidak jauh berbeda
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                tipe menengah ke atas.
+                            </li>
+                        </ul>
+                         <p>Superior room memiliki luas sekitar 30 meter persegi, lebih besar dibanding standar room. Inilah yang menjadikan harganya lebih mahal meski fasilitas yang diberikan tidak jauh berbeda.
+                            Kamar superior biasanya memiliki pilihan kasur twin bed atau kasur double hotel yang berukuran queen atau king.</p>
+                        <p class = "rate">
+                            <span>250.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Executive Suite</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                sangat  mewah.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fasilitas Lengkap.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Tipe VVIP.
+                            </li>
+                        </ul>
+                        <p>Executive suite adalah kamar yang lebih mewah dan terdiri dari ruang tamu, ruang makan, dan kamar tidur terpisah. Kamar mandi biasanya lebih besar dari kamar lain. Umumnya, tamu yang datang memiliki keperluan bisnis atau pelancong khusus lainnya memilih untuk menginap di kamar eksekutif. Kamar tipe ini juga menggunakan kasur double hotel. Bahkan, kamar-kamar mewah ini dilengkapi dengan fasilitas gratis juga seperti camilan atau mini bar.
+                        </p>
+                        <p></p>
+                        <p class = "rate">
+                            <span>350.00-400.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Kami Menyukainya</h3>
+                        <p>Pelayanannya sangat bagus dan kualitas terbaik</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Desi, Indonesia</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Lingkungan Nyaman</h3>
+                        <p>Lingkungan sangat nyaman sejuk dan bisa mengefreshingkan fikiran</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Mariana,Indonesia</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Tempat yang bagus</h3>
+                        <p>Hotel ini bagus,nyaman,sesuai dengan keinginan</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Daniel, Indonesia</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>Tentang Kami</h2>
+                    <p>Rose Hotel Bangkalan
+                        2018 kami menghadirkan Hotel Rose di Bangkalan untuk menambah daya tampung dari luar daerah maupun tamu dari lokal Bangkalan. Dengan gaya konsep hotel yang Mewah namun Minimalis dan pelayanan yang maksimal, kami harapkan dapat memuaskan semua tamu di hotel kami. Silahkan hubungi kontak kami atau langsung kunjungi lokasi hotel kami untuk info lebih lanjut.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <a href="https://wa.me/081331569972"> <class = "fa fa-whatsapp "> <img src="images/wa-1.png" alt="">
+                        <li class = "flex">
+                            <a href="https://www.instagram.com/cece.reall"> <class = "fa fa-instagram "> <img src="images/ig.jpg" alt="">
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Tautan Berguna</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Berlangganan</a>
+                    <a href = "#">Kartu ucapan</a>
+                </div>
+
+                <div>
+                    <h2>Pribadi</h2>
+                    <a href = "#">Karier</a>
+                    <a href = "#">Tentang Kami</a>
+                    <a href = "#">Hubungi kami</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Jalan HOS. Cokroaminoto No.21
+Jalan HOS. Cokroaminoto No.25
+Demangan
+Kecamatan Bangkalan
+Kabupaten Bangkalan
+Jawa Timur 69115
+Indonesia
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            
+(031) 30633670
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            hotelrose@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
